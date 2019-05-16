@@ -249,6 +249,97 @@
         ["xpath=//h2[contains(.,'Sign Up')]", "xpath:innerText"]
       ],
       "value": ""
+    }, {
+      "id": "d1838358-e436-436f-ba41-289cf461e976",
+      "comment": "",
+      "command": "storeTitle",
+      "target": "j",
+      "targets": [],
+      "value": "j"
+    }, {
+      "id": "9afa7ed8-55e7-4dc0-ba3f-9f2df97faba9",
+      "comment": "",
+      "command": "echo",
+      "target": "${j}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eb7e07e4-56fa-4738-8ba1-ad8bbaa98358",
+      "comment": "",
+      "command": "select",
+      "target": "id=month",
+      "targets": [
+        ["id=month", "id"],
+        ["name=birthday_month", "name"],
+        ["css=#month", "css:finder"],
+        ["xpath=//select[@id='month']", "xpath:attributes"],
+        ["xpath=//span[@id='u_0_n']/span/select", "xpath:idRelative"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": "Jul"
+    }, {
+      "id": "ce1c86f4-54dc-49c6-ba0d-508a3813d275",
+      "comment": "",
+      "command": "check",
+      "target": "id=u_0_a",
+      "targets": [
+        ["id=u_0_a", "id"],
+        ["css=#u_0_a", "css:finder"],
+        ["xpath=//input[@id='u_0_a']", "xpath:attributes"],
+        ["xpath=//span[@id='u_0_s']/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa0b018f-74ac-4ce6-88e6-d50f93ce1fe0",
+      "comment": "",
+      "command": "uncheck",
+      "target": "id=u_0_a",
+      "targets": [
+        ["id=u_0_a", "id"],
+        ["css=#u_0_a", "css:finder"],
+        ["xpath=//input[@id='u_0_a']", "xpath:attributes"],
+        ["xpath=//span[@id='u_0_s']/span[2]/input", "xpath:idRelative"],
+        ["xpath=//span[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "aedc4b3c-cfe6-4e91-b8ab-f72bce7c4e30",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "id=u_0_u",
+      "targets": [
+        ["id=u_0_u", "id"],
+        ["name=websubmit", "name"],
+        ["css=#u_0_u", "css:finder"],
+        ["xpath=//button[@id='u_0_u']", "xpath:attributes"],
+        ["xpath=//div[@id='reg_form_box']/div[9]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "280dfdd9-07c7-439a-81c1-536c678bab7c",
+      "comment": "",
+      "command": "pause",
+      "target": "5000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "432bf8ac-c5a8-49fd-8004-549f38bd52fd",
+      "comment": "",
+      "command": "mouseOut",
+      "target": "id=u_0_u",
+      "targets": [
+        ["id=u_0_u", "id"],
+        ["name=websubmit", "name"],
+        ["css=#u_0_u", "css:finder"],
+        ["xpath=//button[@id='u_0_u']", "xpath:attributes"],
+        ["xpath=//div[@id='reg_form_box']/div[9]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
+      "value": ""
     }]
   }],
   "suites": [{
