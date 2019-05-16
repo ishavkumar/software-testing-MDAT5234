@@ -2,7 +2,7 @@
   "id": "5f085365-cf35-47db-bcdb-c40d6dfc8b22",
   "version": "2.0",
   "name": "Testing",
-  "url": "https://www.google.ca",
+  "url": "https://www.facebook.com",
   "tests": [{
     "id": "b5dddbeb-cb94-45b1-951b-b6ce5c5f9e0c",
     "name": "google",
@@ -177,13 +177,16 @@
       "id": "115a51bf-fadf-4c38-9c96-451d225974b6",
       "comment": "",
       "command": "storeText",
-      "target": "id=yui_3_18_0_3_1557882813248_802",
+      "target": "id=yui_3_18_0_3_1557964927477_669",
       "targets": [
-        ["id=yui_3_18_0_3_1557882813248_802", "id"],
-        ["css=#yui_3_18_0_3_1557882813248_802", "css:finder"],
-        ["xpath=//div[@id='yui_3_18_0_3_1557882813248_802']", "xpath:attributes"],
-        ["xpath=//div[@id='yui_3_18_0_3_1557882813248_799']/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div/div", "xpath:position"]
+        ["id=yui_3_18_0_3_1557964927477_669", "id"],
+        ["linkText=Style", "linkText"],
+        ["css=#yui_3_18_0_3_1557964927477_669", "css:finder"],
+        ["xpath=(//a[contains(text(),'Style')])[2]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_18_0_3_1557964927477_669']", "xpath:attributes"],
+        ["xpath=//li[@id='yui_3_18_0_3_1557964927477_670']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ca.style.yahoo.com/')])[2]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[6]/a", "xpath:position"]
       ],
       "value": "size"
     }, {
@@ -192,6 +195,59 @@
       "command": "echo",
       "target": "size",
       "targets": [],
+      "value": ""
+    }, {
+      "id": "704f9af4-9eee-4783-a2e5-cfb0aa042bc3",
+      "comment": "",
+      "command": "verifyText",
+      "target": "id=yui_3_18_0_3_1557964497665_659",
+      "targets": [
+        ["id=yui_3_18_0_3_1557964497665_659", "id"],
+        ["linkText=Celebrity", "linkText"],
+        ["css=#yui_3_18_0_3_1557964497665_659", "css:finder"],
+        ["xpath=(//a[contains(text(),'Celebrity')])[2]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_18_0_3_1557964497665_659']", "xpath:attributes"],
+        ["xpath=//li[@id='yui_3_18_0_3_1557964497665_660']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, 'https://ca.celebrity.yahoo.com/')])[2]", "xpath:href"],
+        ["xpath=//div[4]/ul/li[5]/a", "xpath:position"]
+      ],
+      "value": "Make your move."
+    }, {
+      "id": "564b99d8-08a4-4fa8-84dd-7710965feca8",
+      "comment": "",
+      "command": "type",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "25c28194-8eef-4163-a434-500f29c6f093",
+    "name": "command 2",
+    "commands": [{
+      "id": "fcd4075f-7ad6-4c7c-9291-a62d5ca163d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://facebook.com",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "954a3ab0-fbb0-49b3-aa18-886826662539",
+      "comment": "",
+      "command": "type",
+      "target": "id=u_0_c",
+      "targets": [],
+      "value": "ishav"
+    }, {
+      "id": "16835c37-eda4-453c-9948-e8f5f6ab6a9a",
+      "comment": "",
+      "command": "assertNotText",
+      "target": "css=.\\_6_ > .mbs",
+      "targets": [
+        ["css=.\\_6_ > .mbs", "css:finder"],
+        ["xpath=//div[@id='content']/div/div/div/div/div[2]/h2", "xpath:idRelative"],
+        ["xpath=//div[2]/h2", "xpath:position"],
+        ["xpath=//h2[contains(.,'Sign Up')]", "xpath:innerText"]
+      ],
       "value": ""
     }]
   }],
@@ -203,6 +259,6 @@
     "timeout": 300,
     "tests": []
   }],
-  "urls": ["https://www.google.com/", "https://www.google.ca/", "https://ca.yahoo.com/?p=us"],
+  "urls": ["https://www.google.com/", "https://www.google.ca/", "https://ca.yahoo.com/?p=us", "https://www.facebook.com/"],
   "plugins": []
 }
