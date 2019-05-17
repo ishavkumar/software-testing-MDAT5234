@@ -2,7 +2,7 @@
   "id": "5f085365-cf35-47db-bcdb-c40d6dfc8b22",
   "version": "2.0",
   "name": "Testing",
-  "url": "https://www.facebook.com",
+  "url": "https://www.google.ca",
   "tests": [{
     "id": "b5dddbeb-cb94-45b1-951b-b6ce5c5f9e0c",
     "name": "google",
@@ -339,6 +339,51 @@
         ["xpath=//button", "xpath:position"],
         ["xpath=//button[contains(.,'Sign Up')]", "xpath:innerText"]
       ],
+      "value": ""
+    }]
+  }, {
+    "id": "f3f12bd4-b7ab-4db1-89f5-dce0d6378dc3",
+    "name": "newcom",
+    "commands": [{
+      "id": "2af05337-cd37-4f9a-bc06-651b2966418b",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.google.ca",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1bbb7ac0-e47b-4697-b233-745b596d09dd",
+      "comment": "",
+      "command": "assertEditable",
+      "target": "name=q",
+      "targets": [
+        ["name=q", "name"],
+        ["css=.gLFyf", "css:finder"],
+        ["xpath=//input[@name='q']", "xpath:attributes"],
+        ["xpath=//form[@id='tsf']/div[2]/div/div/div/div/input", "xpath:idRelative"],
+        ["xpath=//div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "209a3f47-d02a-40f4-8106-cd9da2736e69",
+      "comment": "",
+      "command": "chooseCancelOnNextConfirmation",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "caf78462-79d3-4786-a27c-44b0f7cc3032",
+      "comment": "",
+      "command": "setSpeed",
+      "target": "6000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1cf2d9bf-62a1-4ccc-9e5c-2b133e28c2a6",
+      "comment": "",
+      "command": "open",
+      "target": "https://www.facebook.com",
+      "targets": [],
       "value": ""
     }]
   }],
